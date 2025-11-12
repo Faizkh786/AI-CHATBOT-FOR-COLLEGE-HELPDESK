@@ -1,0 +1,10 @@
+# Cohere AI API Key Configuration
+# 
+# Instructions:
+# 1. Rename this file to .env
+# 2. Get your API key from: https://dashboard.cohere.com/api-keys
+# 3. Replace 'your_cohere_api_key_here' with your actual API key
+#
+# Format:
+COHERE_API_KEY=your_cohere_api_key_here
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI College HelpDesk</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-card">
+            <!-- Header -->
+            <div class="header">
+                <i class="fas fa-graduation-cap header-icon"></i>
+                <h1>AI College HelpDesk</h1>
+            </div>
+
+            <!-- Tagline -->
+            <div class="tagline">
+                <i class="fas fa-check-circle"></i>
+                <span>Your intelligent college assistant - Ask me anything!</span>
+            </div>
+
+            <!-- Tip Section -->
+            <div class="tip-section">
+                <i class="fas fa-lightbulb"></i>
+                <span>Tip: Ask about admissions, tuition, scholarships, campus life, and more</span>
+            </div>
+
+            <!-- Chat Messages Area -->
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        Welcome to AI College HelpDesk! 👋 I'm here to help you with questions about admissions, financial aid, tuition, campus life, academics, housing, scholarships, and much more. What would you like to know?
+                    </div>
+                    <div class="message-time" id="currentTime"></div>
+                </div>
+            </div>
+
+            <!-- Error Message (hidden by default) -->
+            <div class="error-message" id="errorMessage" style="display: none;">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span>Backend server is not running. Start it with: python app.py</span>
+            </div>
+
+            <!-- Suggested Topics -->
+            <div class="suggested-topics">
+                <button class="topic-btn" data-topic="Admission">Admission</button>
+                <button class="topic-btn" data-topic="Financial Aid">Financial Aid</button>
+                <button class="topic-btn" data-topic="Tuition">Tuition</button>
+                <button class="topic-btn" data-topic="Campus Life">Campus Life</button>
+                <button class="topic-btn" data-topic="Scholarships">Scholarships</button>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    placeholder="Ask me anything about college..."
+                    autocomplete="off"
+                >
+                <button class="send-btn" id="sendBtn">
+                    <span>SEND</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
